@@ -5,23 +5,15 @@
     <title>Thanks for joining</title>
     <link rel="stylesheet" href="main.css">
     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="person_tester.js"></script>
 </head>
 <body>
     <main>
         <h1>Thanks for joining our list!</h1>
-        <p id="output"></p>
         <form id="return" name="return" action="index.html" method="get">
             <label>&nbsp;</label>
             <input type="button" id="continue" value="Continue?"><br>
         </form>
-
-        <script>
-            $(document).ready(function() {
-                $("#continue").click(function () {
-                    $("#return").submit();
-                });
-            });
-        </script>
     </main>
 </body>
 </html>
