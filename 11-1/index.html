@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Person Tester Application</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <main>
+        <h1>Welcome to the Person Tester Application</h1>
+        <label for="choice">Create customer or employee?</label>
+        <select id="choice">
+            <option value="">Select one</option>
+            <option value="customer.html">Customer</option>
+            <option value="employee.html">Employee</option>
+        </select>
+
+        <script>
+            document.getElementById("choice").onchange = function() {
+                if (this.selectedIndex!==0) {
+                    window.location.href = this.value;
+                }
+            };
+        </script>
+    </main>
+</body>
+</html>
